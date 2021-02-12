@@ -1,0 +1,45 @@
+{
+  "name": "telegram-api",
+  "version": "1.0.0",
+  "description": "Chatbot API",
+  "main": "server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node ./dist/src/server.js",
+    "start:dev": "ts-node-dev 'src/server.ts'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:func": "jest --projects ./test --runInBand",
+    "lint": "eslint ./src ./test --ext .ts",
+    "lint:fix": "eslint ./src ./test --ext .ts --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clicaqui/telegram-api.git"
+  },
+  "keywords": [
+    "chatbot",
+    "bible"
+  ],
+  "author": "Daniel Bastos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clicaqui/telegram-api/issues"
+  },
+  "homepage": "https://github.com/clicaqui/telegram-api#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.20",
+    "@types/module-alias": "^2.0.0",
+    "@types/node": "^14.14.27",
+    "@types/supertest": "^2.0.10",
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "@typescript-eslint/parser": "^4.15.0",
+    "eslint": "^7.19.0",
+    "jest": "^26.6.3",
+    "supertest": "^6.1.3",
+    "ts-jest": "^26.5.1",
+    "typescript": "^4.1.5"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.2"
+  }
+}
